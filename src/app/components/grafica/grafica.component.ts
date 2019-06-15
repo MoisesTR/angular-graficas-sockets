@@ -17,9 +17,7 @@ export class GraficaComponent implements OnInit {
   ];
   public lineChartLabels: Label[] = ['Enero', 'Febrero', 'Marzo', 'Abril'];
 
-  constructor(private httpClient: HttpClient, private weService: WebsocketService) {
-
-  }
+  constructor(private httpClient: HttpClient, private weService: WebsocketService) {}
 
   ngOnInit(): void {
     this.getDataGrafica();
